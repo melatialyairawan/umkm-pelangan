@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/iconweb.png" type="" />
+
+    <title>UMKM Pelangan</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Loading Overlay Start -->
+    <div id="loading-overlay">
+        <div class="container">
+            <div class="dot"></div>
+        </div>
+    </div>
+    <!-- Loading Overlay End -->    
+
+        <!-- Header Start -->
+        <div class="header">
+            <nav>
+                <input type="checkbox" id="show-search">
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content">
+                    <div class="logo"><a href="index.html"><img src="./images/logo_umkm.png" alt=""></a></div>
+    
+                    <ul class="links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="index.html #about">Tentang Pelangan</a></li>
+                        <li><a href="index.html #product">Produk UMKM</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Header End -->    
+
+    <!-- Konten utama -->
+    <div id="main-content">
+        <section class="product-details">
+            <img src="./images/k2.jpg" alt="Peyek" class="product-image">
+            <div class="details">
+                <h3><strong>Kerupuk</strong></h3>
+                <P class ="tagline">Kerupuk rambak terbuat dari pati terigu, berukuran besar dan renyah. Rasanya gurih, cocok sebagai pelengkap hidangan.</P>
+                <p><strong>Keunggulan:</strong> Bahan alami, tanpa pengawet, renyah, ukurang besar</p>
+                <p><strong>Harga:</strong> Rp 15.000/kg</p>
+                <button class="cta-button" onclick="window.open('https://wa.me/6285807125085', '_blank')">Pesan Sekarang</button>
+            </div>
+        </section>
+
+
+        <!-- Footer Start -->
+        <footer id="footer">
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="./images/logo_umkm.png" alt="">
+                </div>
+                <p>Warga Pelangan mengandalkan keahlian berdagang di pasar, mendukung perekonomian lokal.
+                    <br>Website ini membantu mempromosikan produk UMKM agar ekonomi mereka terus berkembang.
+                </p>
+                <div class="icon">
+                    <div class="logosatu">
+                      <a href="https://www.instagram.com/kknuny_plangan?igsh=aWQ2c2s1NTF0M2gy" target="_blank"
+                        ><img src="./images/logo kkn02.png" alt="Social Icon 1"
+                      /></a>
+                    </div>
+                    <div class="logodua">
+                      <a href="https://www.uny.ac.id/" target="_blank"
+                        ><img src="./images/LOGO UNY.png" alt="Social Icon 2"
+                      /></a>
+                    </div>
+                  </div>
+                      </div>
+            <hr>
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy;Copyright <strong>KKNS-002 Universitas Negeri Yogyakarta 2024</strong></p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+        <a href="#" class="arrow"><i><img src="./images/up-arrow.png" alt="" width="50px"></i></a>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            // Tampilkan overlay loading
+            document.getElementById('loading-overlay').style.display = 'flex';
+            
+            // Tampilkan konten utama setelah 2 detik
+            setTimeout(function() {
+                document.getElementById('loading-overlay').style.display = 'none';
+                document.getElementById('main-content').style.display = 'block';
+            }, 1000); // 1000 ms = 1 detik
+        });
+    </script>    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
